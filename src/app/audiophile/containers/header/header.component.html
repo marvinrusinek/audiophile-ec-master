@@ -1,0 +1,42 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header col-2">
+            <a class="navbar-brand" href="#">
+              <span class="navbar-text">audiophile</span>
+            </a>
+          </div>
+          <button class="navbar-toggler navbar-toggler-right collapsed d-lg-none" type="button"
+                  data-toggle="collapse" data-bs-toggle="collapse"
+                  data-target="#collapsableNavbar" data-bs-target="#collapsableNavbar"
+                  aria-controls="collapsableNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">&#9776;</span>
+            <span class="my-1 mx-2 close">X</span>
+          </button>
+
+          <div class="col-10 justify-content-end nav-menu" id="collapsableNavbar">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" (click)="navigateToSection('')" fragment="home">Home
+                  <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" (click)="navigateToSection('headphones')" fragment="headphones">Headphones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" (click)="navigateToSection('speakers')" fragment="speakers">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" (click)="navigateToSection('earphones')" fragment="earphones">Earphones</a>
+              </li>
+            </ul>
+          </div>
+
+          <img src="assets/images/shared/desktop/icon-cart.svg" alt="shopping cart image" />
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

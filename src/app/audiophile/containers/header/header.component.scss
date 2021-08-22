@@ -1,0 +1,116 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  border-bottom: 1px solid white;
+
+  nav {
+    .navbar-header {
+      .navbar-text {
+        font: 800 36px "Heebo", sans-serif;
+        color: white;
+        margin-left: -40px;
+      }
+    }
+
+    .navbar-toggler > .close {
+      display: inline;
+    }
+    .navbar-toggler.collapsed > .close, .navbar-toggler:not(.collapsed) >.navbar-toggler-icon {
+      display: none;
+    }
+
+    .collapse.show {
+      display: block;
+    }
+
+    button {
+      margin-top: 30px;
+
+      .navbar-toggler-icon {
+        width: 18px;
+        height: 12px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+
+      ul {
+        list-style-type: none;
+        margin-left: 200px;
+
+        li {
+          font: 500 24px "Poppins", sans-serif;
+          color: white;
+          padding-right: 40px;
+          // width: 200px;
+          text-transform: uppercase;
+          transform: translateX(100rem);
+          animation: slideIn .25s forwards;
+
+          a {
+            // color: $gray-black;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+
+            &:active {
+              font-weight: 700;
+            }
+
+            &:hover {
+              cursor: pointer;
+              color: turquoise;
+              // color: $bright-blue;
+            }
+          }
+
+          &:nth-child(1) {
+            animation-delay: 0s;
+            width: 100px;
+          }
+          &:nth-child(2) {
+            animation-delay: 0.25s;
+            width: 200px;
+          }
+          &:nth-child(3) {
+            animation-delay: 0.5s;
+            width: 200px;
+          }
+          &:nth-child(4) {
+            animation-delay: 0.75s;
+            width: 200px;
+          }
+          &:nth-child(5) {
+            animation-delay: 1s;
+          }
+        }
+        @keyframes slideIn {
+          from {}
+          to {
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+
+  /* ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    li {
+      flex-direction: row;
+      text-transform: uppercase;
+      color: white;
+    }
+  } */
+}

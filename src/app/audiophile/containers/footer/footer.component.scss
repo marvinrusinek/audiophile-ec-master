@@ -1,0 +1,91 @@
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  hr {
+    color: orange;
+    width: 100px;
+    height: 10px;
+    margin-top: 0;
+    margin-left: 100px;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin-left: 100px;
+
+    h2 {
+      color: white;
+      font-weight: 900;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      position: absolute;
+      right: 200px;
+
+      li {
+        list-style-type: none;
+        padding-right: 40px;
+        text-transform: uppercase;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            color: turquoise;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    width: auto;
+
+    .about-blurb {
+      width: 500px;
+
+      p {
+        color: gray;
+      }
+
+      .social-media {
+        nav {
+          ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            text-align: right;
+            margin-left: 300px;
+
+            li {
+              padding-right: 20px;
+
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .attribution {
+    display: block;
+    color: gray;
+    margin: 30px 0 40px 100px;
+  }
+}
